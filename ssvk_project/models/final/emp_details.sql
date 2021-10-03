@@ -1,3 +1,3 @@
 {{ config(materialized='table') }}
 
-select * from {{ source('sample','region') }}
+select * from {{ source('sample','region') }} where r_regionkey>1
